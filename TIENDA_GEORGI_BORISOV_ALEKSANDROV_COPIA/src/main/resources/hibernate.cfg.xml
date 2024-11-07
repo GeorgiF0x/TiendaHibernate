@@ -14,6 +14,7 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.archive.autodetection">class</property>
 
         <!-- Configuración de caché (opcional) -->
         <property name="hibernate.cache.use_second_level_cache">false</property>
@@ -21,8 +22,10 @@
 
         <!-- Mapeo de entidades -->
         <mapping class="modelo.Producto"/>
-        <mapping class="modelo.Carrito"/> <!-- Agrega esta línea -->
-        <!-- Añade aquí otras entidades -->
+        <mapping class="modelo.Carrito"/> 
+        <mapping class="modelo.Pedido"/>
+        <mapping class="modelo.Detalle"/>
+        
     </session-factory>
 </hibernate-configuration>
 

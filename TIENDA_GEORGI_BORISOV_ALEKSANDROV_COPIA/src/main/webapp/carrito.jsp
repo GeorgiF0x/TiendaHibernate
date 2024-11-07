@@ -25,12 +25,10 @@
                                     <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Tus Productos</h3>
 
                                     <% 
-                                    // Obtener el HashMap con los productos y las unidades
                                     Map<String, ProductoAuxiliar> productosCarrito = (Map<String, ProductoAuxiliar>) request.getAttribute("productosCarrito");
 
                                     if (productosCarrito != null && !productosCarrito.isEmpty()) {
                                         double totalGeneral = 0.0;
-                                        // Iterar sobre los productos en el carrito
                                         for (ProductoAuxiliar productoAux : productosCarrito.values()) {
                                             double precioUnitario = productoAux.getProducto().getPrecio();
                                             int unidades = productoAux.getUnidades();
@@ -78,8 +76,9 @@
                                 <!-- Columna de pago y finalizar compra -->
                                 <div class="col-lg-6 px-5 py-4">
                                     <h3 class="mb-5 pt-2 text-center fw-bold text-uppercase">Pago</h3>
-                        <!--             <form action="CompraController" method="POST">
-                                        Asegúrate de que el carrito esté siendo enviado correctamente al controlador
+                                    <form action="CompraController" method="POST">
+                                        <%-- Campos de entrada comentados temporalmente --%>
+                                        <%-- 
                                         <div class="form-outline mb-5">
                                             <input type="text" id="nombre" class="form-control form-control-lg" name="nombre" required />
                                             <label class="form-label" for="nombre">Nombre Completo</label>
@@ -96,9 +95,10 @@
                                             <input type="tel" id="telefono" class="form-control form-control-lg" name="telefono" required />
                                             <label class="form-label" for="telefono">Teléfono de Contacto</label>
                                         </div>
-                                        Botón para finalizar la compra
+                                        --%>
+                                        <!-- Botón para finalizar la compra -->
                                         <button type="submit" class="btn btn-primary btn-block btn-lg">Comprar ahora</button>
-                                    </form> -->
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -111,6 +111,3 @@
     <%@ include file="./fragments/footer.jsp" %>
 </body>
 </html>
-
-
-
