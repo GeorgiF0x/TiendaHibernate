@@ -1,0 +1,68 @@
+/* Fondo y bordes del navbar */
+.navbar {
+    background-color: #1a1a1a; /* Fondo negro */
+    border: 1px solid #ff0000; /* Borde rojo */
+    border-radius: 20px; /* Bordes redondeados (aumentado a 20px) */
+    box-shadow: 0px 0px 10px #ff0000, 0px 0px 20px #39ff14; /* Sombra roja y verde */
+    padding: 1rem;
+}
+
+/* Logo y links del navbar */
+.navbar-brand, .nav-link {
+    color: #ff0000 !important; /* Color rojo neón */
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 0px 5px #ff0000, 0px 0px 10px #39ff14; /* Sombra roja y verde en los textos */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Efecto hover en los links */
+.navbar-brand:hover, .nav-link:hover {
+    color: #39ff14 !important; /* Verde en hover */
+    text-shadow: 0px 0px 10px #39ff14, 0px 0px 20px #39ff14; /* Sombra más intensa en verde */
+}
+
+/* Input de búsqueda */
+.form-control {
+    background-color: #0f0f0f;
+    color: #ff0000; /* Rojo neón para el texto */
+    border: 1px solid #ff0000; /* Borde rojo */
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ff0000; /* Sombra roja */
+}
+
+/* Botón de búsqueda */
+.btn-danger {
+    background-color: #ff0000; /* Rojo de fondo */
+    border: none;
+    box-shadow: 0px 0px 5px #ff0000, 0px 0px 10px #39ff14; /* Combinación de sombra roja y verde */
+}
+
+.btn-danger:hover {
+    background-color: #39ff14; /* Verde al pasar el ratón */
+    box-shadow: 0px 0px 10px #39ff14, 0px 0px 20px #ff0000; /* Sombra verde y roja */
+}
+
+/* Botones de login/registro y cerrar sesión */
+.btn-outline-danger {
+    color: #ff0000; /* Rojo */
+    border: 1px solid #ff0000; /* Borde rojo */
+    box-shadow: 0px 0px 5px #ff0000, 0px 0px 10px #ff0000; /* Sombra roja */
+}
+
+.btn-outline-danger:hover {
+    color: #39ff14; /* Verde en hover */
+    border-color: #39ff14; /* Borde verde en hover */
+    box-shadow: 0px 0px 10px #39ff14, 0px 0px 20px #39ff14; /* Sombra verde en hover */
+}
+
+/* Iconos del navbar */
+.navbar-nav .nav-item .nav-link i {
+    color: #ff0000; /* Rojo en los íconos */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover i {
+    color: #39ff14; /* Verde en hover */
+}
+
+
